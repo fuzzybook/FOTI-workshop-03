@@ -1,0 +1,15 @@
+
+body {
+  padding-top: 30px;
+}
+
+$base-color: #027be3;
+$border-color: #cccccc;
+$background-color: #dddddd;
+$row-height: 48px;
+
+[config-ref="config"]:before {
+  display: none;
+  content: '{"baseColor":"#{$base-color}","borderColor":"#{$border-color}","backgroundColor":"#{$background-color}","rowHeight":"#{$row-height}"}';
+}
+/* --------------------------------------------------------------------------------------------------------------------------- */
