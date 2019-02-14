@@ -45,7 +45,7 @@ var log = (function () {
 
   return {
     add: function (msg) { log += msg + '\n' },
-    show: function () { alert(log); log = '' }
+    show: function () { console.log(log); log = '' }
   }
 })()
 

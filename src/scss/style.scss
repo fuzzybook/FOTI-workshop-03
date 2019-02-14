@@ -8,6 +8,19 @@ $border-color: #cccccc;
 $background-color: #dddddd;
 $row-height: 48px;
 
+pre{
+  white-space: pre;
+}
+
+.contenuto-box{
+  display: none;
+  &.selected{
+    background-color: rgba(red, .3);
+  }
+  &.show{
+    display: block;
+  }
+}
 [config-ref="config"]:before {
   display: none;
   content: '{"baseColor":"#{$base-color}","borderColor":"#{$border-color}","backgroundColor":"#{$background-color}","rowHeight":"#{$row-height}"}';

@@ -7,6 +7,7 @@ class Config {
 
     let cssConfig = window.getComputedStyle(document.querySelector('[config-ref="config"]'), ':before').content
     this._css = JSON.parse(this.removeQuotes(cssConfig))
+
   }
   get version() {
     return this._version
@@ -15,7 +16,7 @@ class Config {
     return this._testHeader
   }
   get experimentalDiv() {
-    this._experimentalDiv
+    return this._experimentalDiv
   }
   get css() {
     return this._css
